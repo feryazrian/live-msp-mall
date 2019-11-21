@@ -1,0 +1,142 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": {
+        "current_page": 1,
+        "data": [
+            {
+                "name": "Promo Murah Meriha",
+                "slug": "promo-murah-meriha",
+                "background": "dd52991d9422a184061c3af8d03932f6.jpg",
+                "expired": "2019-08-27 12:00:00",
+                "products": [
+                    {
+                        "type_id": 1,
+                        "category_id": 4,
+                        "condition_id": 1,
+                        "name": "Bialetti Moka Express 1 Cup",
+                        "slug": "bialetti-moka-express-1-cup",
+                        "weight": 500,
+                        "price": 390000,
+                        "discount": 450000,
+                        "stock": 10,
+                        "sold": 0,
+                        "description": "Bialetti Moka Express adalah moka pot yang mampu menghasilkan kopi dengan hasil terbaik. Didesain dengan begitu apik dan modern menggunakan food grade aluminium alloy yang aman bagi kesehatan tentunya akan menjadi teman setia anda dalam menikmati kopi sehari-hari. Membuat kopi nikmat tentunya bukan lagi sesuatu yang meribetkan karena moka pot yang satu ini akan memudahkan anda menikmati espresso dalam hitungan menit. Bialetti Moka Express terdiri dari bagian inti yaitu wadah air, saringan kopi dan teko pada bagian atas tempat kopi dihasilkan. Jangan khawatir bahwa moka pot ini susah dibersihkan karena yang anda butuhkan hanya membasuhnya dengan air hangat dan keringkan sebelum disimpan.",
+                        "point": 5,
+                        "rating": 0,
+                        "review": 0,
+                        "status": 1,
+                        "action_id": 1,
+                        "action_content": null,
+                        "sale": 0,
+                        "preorder": 0,
+                        "preorder_target": null,
+                        "preorder_expired": null,
+                        "voucher_expired": null,
+                        "max_amount_per_days": 0,
+                        "photo": "3e19d2283fbf8fb275e6ef076bcc0f1f.jpg",
+                        "seller": {
+                            "type_id": 1,
+                            "name": "Jimm's Brew",
+                            "referral_name": null,
+                            "category_id": 4,
+                            "additional_id": 1,
+                            "finance_id": 34,
+                            "shipping_pos": 1,
+                            "shipping_jne": 1,
+                            "shipping_tiki": 1,
+                            "status": 1,
+                            "merchant": {
+                                "merchant_id": 33,
+                                "name": "Merchant Store",
+                                "address": "Kabupaten Deli Serdang",
+                                "provinsi_id": 12,
+                                "kabupaten_id": 1212,
+                                "kecamatan_id": 1212230,
+                                "desa_id": 1212230007,
+                                "postal_code": 20352
+                            }
+                        },
+                        "category": {
+                            "parent_id": null,
+                            "name": "Keperluan Rumah",
+                            "slug": "keperluan-rumah",
+                            "icon": "85cfa5f30a84a629280359bb4a3246e1.png",
+                            "cover": "0c41bf633d4e20bf4644f46b4e884dc6.jpeg",
+                            "background": null,
+                            "highlight": 0
+                        }
+                    },
+                    {
+                        "type_id": 1,
+                        "category_id": 3,
+                        "condition_id": 1,
+                        "name": "XIU XIU PENCIL &amp- LIQUID EYELINER",
+                        "slug": "xiu-xiu-pencil-amp-liquid-eyeliner-1557979483",
+                        "weight": 30,
+                        "price": 17000,
+                        "discount": 19000,
+                        "stock": 7,
+                        "sold": 0,
+                        "description": "\"EYELINER INI MEMILIKI 2 FUNGSI, DENGAN PENSIL DAN CAIRAN SEPERTI DI FOTO.\r\n\r\nKEMASAN LUAR BISA SAJA BERWARNA COKLAT/ GLITER TETAPI SEMUA ISI HANYA 1 WARNA\r\n- BLACK\r\n\r\n\"\r\nCTK N351",
+                        "point": null,
+                        "rating": 0,
+                        "review": 0,
+                        "status": 1,
+                        "action_id": 1,
+                        "action_content": null,
+                        "sale": 0,
+                        "preorder": 0,
+                        "preorder_target": null,
+                        "preorder_expired": null,
+                        "voucher_expired": null,
+                        "max_amount_per_days": 0,
+                        "photo": "0cbe155623d93c8d410c835e78e433d1.jpg",
+                        "seller": {
+                            "type_id": 1,
+                            "name": "Home Store",
+                            "referral_name": null,
+                            "category_id": 4,
+                            "additional_id": 4,
+                            "finance_id": 155,
+                            "shipping_pos": 1,
+                            "shipping_jne": 1,
+                            "shipping_tiki": 1,
+                            "status": 1,
+                            "merchant": {
+                                "merchant_id": 156,
+                                "name": "Merchant Store",
+                                "address": "Kota Medan",
+                                "provinsi_id": 12,
+                                "kabupaten_id": 1275,
+                                "kecamatan_id": 1275150,
+                                "desa_id": 1275150008,
+                                "postal_code": 20239
+                            }
+                        },
+                        "category": {
+                            "parent_id": null,
+                            "name": "Kecantikan",
+                            "slug": "kecantikan",
+                            "icon": "d6f2c58a05e76d9ecfacd4abc8aeb8eb.png",
+                            "cover": "ce31f78437811db64145db7f30402c65.png",
+                            "background": "c674823c076598649d98cab952ddfc33.jpg",
+                            "highlight": 1
+                        }
+                    }
+                ]
+            }
+        ],
+        "first_page_url": "http://localhost:8000/api/v2/product/seasonal-promo/promo-murah-meriha?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://localhost:8000/api/v2/product/seasonal-promo/promo-murah-meriha?page=1",
+        "next_page_url": null,
+        "path": "http://localhost:8000/api/v2/product/seasonal-promo/promo-murah-meriha",
+        "per_page": 15,
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+}

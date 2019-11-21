@@ -1,0 +1,78 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": {
+        "image_path": null,
+        "current_page": 1,
+        "data": [
+            {
+                "type_id": 1,
+                "category_id": 2,
+                "condition_id": 1,
+                "name": "Dildo",
+                "slug": "dildo",
+                "weight": 1,
+                "price": 17000,
+                "discount": 20000,
+                "stock": 12,
+                "sold": 0,
+                "description": "Test Dildo",
+                "point": 0,
+                "rating": 0,
+                "review": 0,
+                "status": 1,
+                "action_id": 1,
+                "action_content": null,
+                "sale": 0,
+                "preorder": 1,
+                "preorder_target": 2,
+                "preorder_expired": "2019-08-30 15:37:33",
+                "voucher_expired": null,
+                "max_amount_per_days": 0,
+                "photo": "150c98871f28864114949bdbdb50ae4a.jpg",
+                "seller": {
+                    "type_id": 2,
+                    "name": "RShop",
+                    "referral_name": null,
+                    "category_id": 12,
+                    "additional_id": 8,
+                    "finance_id": 197,
+                    "shipping_pos": 1,
+                    "shipping_jne": 1,
+                    "shipping_tiki": 1,
+                    "status": 1,
+                    "merchant": {
+                        "merchant_id": 201,
+                        "name": "Merchant Store",
+                        "address": "Kota Medan",
+                        "provinsi_id": 12,
+                        "kabupaten_id": 1275,
+                        "kecamatan_id": 1275150,
+                        "desa_id": 1275150008,
+                        "postal_code": 22222
+                    }
+                },
+                "category": {
+                    "parent_id": null,
+                    "name": "Kesehatan",
+                    "slug": "kesehatan",
+                    "icon": "449774d5bdae195e3f0ce24ce33df3c6.png",
+                    "cover": "ad81fab6fcfc225f7cf8bdbee8252283.png",
+                    "background": "0e420f44be44a3059cf9dea86de6851e.jpg",
+                    "highlight": 1
+                }
+            }
+        ],
+        "first_page_url": "http://localhost:8000/api/v2/product/group-buy-promo?page=1",
+        "from": 1,
+        "last_page": 1,
+        "last_page_url": "http://localhost:8000/api/v2/product/group-buy-promo?page=1",
+        "next_page_url": null,
+        "path": "http://localhost:8000/api/v2/product/group-buy-promo",
+        "per_page": "5",
+        "prev_page_url": null,
+        "to": 1,
+        "total": 1
+    }
+}

@@ -1,0 +1,90 @@
+/* Banner Style */
+/* @media (min-width: 500px) { */
+    .swiper-container {
+        width: 100%;
+        /* height: 300px; */
+        padding: 20px 0;
+    }
+/* } */
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    width: 75%;
+    border-radius: 6px;
+}
+#banner .swiper-slide-next, .swiper-slide-prev {
+    height: 75%;
+    max-height: 200px;
+    margin:auto;
+}
+.swiper-slide-next > a > img, .swiper-slide-prev > a > img {
+    max-height: 200px;
+}
+.swiper-slide-active {
+    width: 75%;
+    height: 100%;
+    margin:auto;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #ffbb00 !important;
+}
+.banner-img {
+    width:100%;
+    height:100%;
+    max-height: 280px;
+    border-radius:6px;
+    object-fit: cover;
+    /* margin: 20px 0; */
+}
+/* Style for Tabs */
+.nav-tabs > li > a {
+    border: none;
+    background: #ededed !important;
+}
+.nav-link {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important
+}
+.nav-tabs > li.nav-item > a,
+.nav-tabs > li.nav-item > a:hover {
+    border: none;
+    color: #000000 !important;
+    background: transparent;
+    position: relative;
+}
+.nav-tabs > li.nav-item > a::after {
+    content: "";
+    background: #dadada;
+    height: 5px;
+    width: 50% !important;
+    position: absolute;
+    left: 25%;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+.nav-tabs > li.nav-item > a.active::after,
+.nav-tabs > li.nav-item:hover > a::after {
+    transform: scale(1);
+}
+.tab-content{
+    border: none !important;
+}
+/* end of banner Style */

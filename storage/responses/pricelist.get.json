@@ -1,0 +1,70 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": [
+        {
+            "pulsa_code": "haxis10000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "10000",
+            "pulsa_price": 10800,
+            "pulsa_type": "pulsa",
+            "masaaktif": "15",
+            "status": "active"
+        },
+        {
+            "pulsa_code": "haxis100000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "100000",
+            "pulsa_price": 100000,
+            "pulsa_type": "pulsa",
+            "masaaktif": "90",
+            "status": "active"
+        },
+        {
+            "pulsa_code": "haxis15000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "15000",
+            "pulsa_price": 15000,
+            "pulsa_type": "pulsa",
+            "masaaktif": "0",
+            "status": "active"
+        },
+        {
+            "pulsa_code": "haxis200000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "200000",
+            "pulsa_price": 200000,
+            "pulsa_type": "pulsa",
+            "masaaktif": "120",
+            "status": "active"
+        },
+        {
+            "pulsa_code": "haxis25000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "25000",
+            "pulsa_price": 26000,
+            "pulsa_type": "pulsa",
+            "masaaktif": "30",
+            "status": "active"
+        },
+        {
+            "pulsa_code": "haxis5000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "5000",
+            "pulsa_price": 5900,
+            "pulsa_type": "pulsa",
+            "masaaktif": "7",
+            "status": "active"
+        },
+        {
+            "pulsa_code": "haxis50000",
+            "pulsa_op": "AXIS",
+            "pulsa_nominal": "50000",
+            "pulsa_price": 51000,
+            "pulsa_type": "pulsa",
+            "masaaktif": "60",
+            "status": "active"
+        }
+    ]
+}

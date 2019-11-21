@@ -1,0 +1,35 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": [
+        {
+            "id": 1,
+            "title": "Promo Cashback 100%",
+            "description": "<p>Pada tanggal 1 Agustus 2019, MSP Mall akan melaunching Top Up Pulsa & Paket Data. Maka dari itu MSP Mall akan memberikan Promo Cash Back 100%.<br></p>",
+            "image_path": "uploads/Banner/f2a0122a2b3f32cea6281b41f871b80e.png",
+            "link": "https://mymspmall.id",
+            "flag": 1,
+            "publish_date": "2019-08-22 07:00:00",
+            "end_date": "2019-08-25 08:00:00",
+            "created_at": "2019-08-01 00:42:47",
+            "updated_at": "2019-08-07 20:34:02",
+            "deleted_at": null,
+            "slug": "promo-cashback-100"
+        },
+        {
+            "id": 2,
+            "title": "banner2",
+            "description": "<p>Deskripsi banner 2<br></p>",
+            "image_path": "uploads/Banner/26b3e580b3617349022a1c17b295c951.jpg",
+            "link": "https://mymspmall.id",
+            "flag": 1,
+            "publish_date": "2019-08-15 12:00:00",
+            "end_date": "2019-08-30 12:00:00",
+            "created_at": "2019-08-22 15:36:15",
+            "updated_at": "2019-08-22 15:36:44",
+            "deleted_at": null,
+            "slug": "banner2"
+        }
+    ]
+}

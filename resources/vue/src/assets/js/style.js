@@ -1,0 +1,1 @@
+export const AMBER_DARKEN_1 = '#ffb300'

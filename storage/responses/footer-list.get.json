@@ -1,0 +1,95 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": [
+        {
+            "id": 1,
+            "name": "MyMSPMall",
+            "slug": "mymspmall",
+            "position_id": 1,
+            "created_at": "2018-11-23 15:37:28",
+            "updated_at": "2018-11-23 15:37:28",
+            "links": [
+                {
+                    "name": "Beriklan Sekarang",
+                    "url": "http://localhost:8000/ads"
+                },
+                {
+                    "name": "MSP Forum",
+                    "url": "http://forum.mymspmall.id"
+                },
+                {
+                    "name": "Tentang Kami",
+                    "url": "http://localhost:8000/page/tentang-kami"
+                },
+                {
+                    "name": "Syarat & Ketentuan Histeria Vaganza",
+                    "url": "http://localhost:8000/page/syarat-ketentuan-histeria-vaganza"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Pembelian",
+            "slug": "pembelian",
+            "position_id": 1,
+            "created_at": "2018-11-23 15:37:36",
+            "updated_at": "2018-11-23 15:37:36",
+            "links": [
+                {
+                    "name": "Panduan Belanja",
+                    "url": "http://localhost:8000/page/panduan-belanja"
+                },
+                {
+                    "name": "Kebijakan Pengiriman",
+                    "url": "http://localhost:8000/page/kebijakan-pengiriman"
+                },
+                {
+                    "name": "Kebijakan Pengembalian",
+                    "url": "http://localhost:8000/page/kebijakan-pengembalian"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Penjualan",
+            "slug": "penjualan",
+            "position_id": 1,
+            "created_at": "2018-11-23 15:37:42",
+            "updated_at": "2018-11-23 15:37:42",
+            "links": [
+                {
+                    "name": "Menjadi Merchant",
+                    "url": "http://localhost:8000/merchant/join"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Bantuan",
+            "slug": "bantuan",
+            "position_id": 1,
+            "created_at": "2018-11-23 15:37:49",
+            "updated_at": "2018-11-23 15:37:49",
+            "links": [
+                {
+                    "name": "Reset Password",
+                    "url": "http://localhost:8000/password/reset"
+                },
+                {
+                    "name": "Syarat & Ketentuan",
+                    "url": "http://localhost:8000/page/syarat-ketentuan"
+                },
+                {
+                    "name": "Kebijakan Privasi",
+                    "url": "http://localhost:8000/page/kebijakan-privasi"
+                },
+                {
+                    "name": "Panduan Keamanan",
+                    "url": "http://localhost:8000/page/panduan-keamanan"
+                }
+            ]
+        }
+    ]
+}

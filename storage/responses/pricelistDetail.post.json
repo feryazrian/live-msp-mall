@@ -1,0 +1,14 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": {
+        "pulsa_code": "haxis50000",
+        "pulsa_op": "AXIS",
+        "pulsa_nominal": "50000",
+        "pulsa_price": 51000,
+        "pulsa_type": "pulsa",
+        "masaaktif": "60",
+        "status": "active"
+    }
+}

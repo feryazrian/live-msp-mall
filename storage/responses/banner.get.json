@@ -1,0 +1,31 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": {
+        "list": [
+            {
+                "id": 5,
+                "position_id": 1,
+                "name": "Slide 2",
+                "photo": "98e082a7eadbcf0175e1c0c1feb6426a.jpg",
+                "url": "https:\/\/mymspmall.id"
+            },
+            {
+                "id": 22,
+                "position_id": 1,
+                "name": "Promo Ongkir",
+                "photo": "53c3c77a7093e40b8386a35ab92683b7.jpeg",
+                "url": "https:\/\/mymspmall.id"
+            },
+            {
+                "id": 15,
+                "position_id": 1,
+                "name": "Histeria Vaganza",
+                "photo": "fabe76374b4a539af0f4690e07f70c01.jpeg",
+                "url": "http:\/\/localhost:8000\/page\/syarat-ketentuan-histeria-vaganza"
+            }
+        ],
+        "image_path": "http:\/\/127.0.0.1:8000\/uploads\/slides"
+    }
+}

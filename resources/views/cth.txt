@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ asset('assets/js/minify/jquery.slotmachine.css') }}" type="text/css" media="screen" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="{{ asset('assets/js/minify/slotmachine.min.js') }}"></script>
+  <script src="{{ asset('assets/js/minify/slotmachine.js') }}"></script>
+  <script src="{{ asset('assets/js/minify/jquery.slotmachine.js') }}"></script>
+  
+  <script>
+    $(document).ready(function(){
+      let textMachine, currentWinner;
+
+      fetch('http://newdev.mymspmall.id/api/v2/lottery/list', { method:'GET' }).then(result => result.status === 200? result.json() : Promise.reject(result.json()))
+        .then(data => {
+          let container = $('#textMachine')
+          let flex = $('.flex')
+          let flex2 = $('.flex2')
+          let flex3 = $('.flex3')
+          let i 
+
+          data = data.items;
+            for(let e of data) {
+              if(e.lottery_status == 0){
+              container.append("<div><input type='text' class='final' id='"+e.name+"' data-id='"+e.id+"' hidden/><span class='badge'>" + e.name + "</span></div>")
+              }
+            }
+
+            for(i=0;i<5;i++) {
+              flex.append("<td style='border: 0px solid black; width: 200px;'>" +data[i]['name'] + "</td>")
+            }
+
+            for(i=5;i<10;i++) {
+              flex2.append("<td style='border: 0px solid black; width: 200px;'>" +data[i]['name'] + "</td>")
+            }
+
+            for(i=10;i<15;i++) {
+              flex3.append("<td style='border: 0px solid black; width: 200px;'>" +data[i]['name'] + "</td>")
+            }
+   
+            textMachine = $("#textMachine").slotMachine({
+            active	: 0,
+            delay	: 500
+          });
+        })
+
+        
+      let sound
+
+      $("#finalisButton").click(function(){	
+
+        var url = 'http://newdev.mymspmall.id/api/v2/lottery/update_lottery';
+          // var container = $('#textMachine').val;
+          // console.log(container);
+        var id = $(this).find('.final').attr('data-id');
+
+                // var id2 = $(this).find('.final').attr('data-id');
+                var id2 = document.getElementById(id).val
+
+        console.log(id);
+        var data = {user_id: $('#textMachine').val};
+
+        fetch(url, {
+          method: 'POST', // or 'PUT'
+          body: JSON.stringify(data), // data can be `string` or {object}!
+          headers:{
+            'Content-Type': 'application/json'
+          }
+        }).then(res => res.json())
+        .then(response => console.log('Success:', JSON.stringify(response)))
+        .catch(error => console.error('Error:', error));
+      })
+
+      $("#randomizeButton").click(function(){							
+        textMachine.shuffle();
+        sound = $('#mySound')[0]
+        sound.loop = true
+        sound.play()
+      })
+                              
+      $("#randomizeButtonStop").click(function(){			
+        if( textMachine.isRunning() ){
+        textMachine.stop(true);
+        sound.pause()
+        }
+      });
+    });
+  </script>
+
+<style>
+  .btn {
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    opacity: 0.6;
+    transition: 0.3s;
+    font-family: "Impact", Charcoal, sans-serif;
+   
+  }
+
+  .btn:hover {opacity: 1}
+
+  h5 {
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-family: "Impact", Charcoal, sans-serif;
+  }
+
+  .badge {
+    color: white;
+    vertical-align: middle;
+    font-size: 47px;
+  }
+
+  #peserta td {
+    background-repeat: round;
+    white-space: nowrap;
+
+  }
+
+  #textMachine {
+    height: 67px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+  }
+
+  p {
+  width: 1000px;
+  height: 100px;
+  }
+
+  .draw {
+  width: 1000px;
+  height: 130px;
+  padding: 1.5em;
+  position: absolute;
+  right: 80%;
+  top: 0%;
+  }
+  .draw#sol{ border-style: solid; }
+
+.container {
+  display:grid;
+  grid-template-columns: 100% auto;
+  padding: 5em 1em;
+}
+
+#sol{
+  position:relative;
+}
+#sol::before{
+  border: 2px dashed #fff;
+  content: '';
+  width: 98.5%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  height: 94%;
+  transform: translate(50%,-50%);
+}
+#sol::after{
+  border: 1px dotted #fff;
+  content: '';
+  width: 97%;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  height: 85%;
+  transform: translate(50%,-50%);
+}
+
+.flex td {
+  text-align: center;
+  width: "532px";
+  background-image: url('assets/img/badges-putih.png');
+  line-height: 70px;
+  font-family: "Impact", Charcoal, sans-serif;
+  font-style: bolder;
+  font-size: 30px;
+  color: orange;
+
+}
+
+.flex2 {
+  text-align: center;
+  width: "532";
+  background-image: url('assets/img/badges-putih.png');
+  line-height: 70px;
+  font-family: "Impact", Charcoal, sans-serif;
+  font-style: bolder;
+  font-size: 30px;
+  color: orange;
+}
+
+.flex3 {
+  text-align: center;
+  width: "532";
+  background-image: url('assets/img/badges-putih.png');
+  line-height: 70px;
+  font-family: "Impact", Charcoal, sans-serif;
+  font-style: bolder;
+  font-size: 30px;
+  color: orange;
+}
+
+#randomizeButton {
+  opacity: 0;
+}
+
+#randomizeButton:hover {
+  opacity: 1;
+}
+
+#randomizeButtonStop {
+  opacity: 0;
+}
+
+#randomizeButtonStop:hover {
+  opacity: 1;
+}
+
+</style>
+
+<title>MSP Mall</title> 
+</head>
+<body>
+  <div class="section" >
+    <div class="jumbotron" style="background-image: url('assets/img/bg-luckydraw.jpg'); background-size:cover;
+      background-attachment: fixed; position:fixed; top:0; left:0; min-width:100%; min-height:100%;">
+      
+      <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+        
+        <div class="row align-items-start" style="padding-top:300px;">        
+          <div class="col-sm-1 offset-sm-1">
+            <div id="sol" class="draw" style="color: white; text-align: center;">
+              <div id="textMachine" class="slotMachine text-center" >
+            </div>
+          </div>
+              <audio id="mySound">
+              <source src="/assets/sound/slot.wav" type="audio/x-wav">
+              </audio>
+          </div>          
+        </div>
+        </div>
+      <h3>  </h3>
+
+      <div class="col align-self-center">
+        <div style="margin-left: 320px; padding-top: 50px;">
+          <table id="peserta" width="1135" style="border=1px;">
+            <tr class="flex">
+              {{-- <td>number</td>
+              <td >number</td>
+              <td>number</td>
+              <td>number</td>
+              <td>number</td> --}}
+            </tr>
+          </table>
+        </div>
+        <div style="margin-left: 320px; padding-top: 30px;">
+          <table width="1135 padding-top: 20px;">
+            <tr class="flex2">
+ 
+            </tr>
+          </table>
+        </div>
+
+          <div style="margin-left: 320px; padding-top: 30px;">
+          <table width="1135 padding-top: 20px;">
+            <tr class="flex3">
+              
+            </tr>
+          </table>
+        </div>
+
+        <div style="margin-left: 320px; padding-top: 30px;">
+          <table width="1135 padding-top: 20px;">
+            <tr class="but">
+             <td ><button id=randomizeButton type="button" class="slotMachineButton btn btn-outline-warning btn-block" style=" margin-top: 1rem">S T A R T</button></td>
+              <td><button id=randomizeButtonStop type="button" class="slotMachineButton btn btn-outline-warning btn-block" style=" margin-top: 1rem">S T O P</button></td>
+              {{-- <td><button id=finalisButton  type="button" class="btn btn-info btn-lg" style=" margin-top: 1rem">Finalis</button></td> --}}
+            </tr>
+          </table>
+        </div>
+         
+    </div>
+    </div>
+  </div>
+</body>
+</html>

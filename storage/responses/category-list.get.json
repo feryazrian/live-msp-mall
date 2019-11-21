@@ -1,0 +1,100 @@
+{
+    "code": 200,
+    "status": "OK",
+    "message": "Data berhasil ditampilkan",
+    "items": [
+        {
+            "id": 1,
+            "parent_id": null,
+            "name": "Kebutuhan Harian",
+            "slug": "kebutuhan-harian",
+            "icon": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories399f6fa45bf585ebdd93df8658569f04.png",
+            "cover": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories4b6ad3246d2cefd428aa1e7d8cf788d8.png",
+            "background": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories17728d85f7f3d3535ac6859a2bc626ec.jpg",
+            "highlight": 1,
+            "created_at": "2018-11-02 05:00:00",
+            "updated_at": "2019-05-11 16:38:58",
+            "child": []
+        },
+        {
+            "id": 8,
+            "parent_id": null,
+            "name": "Peralatan Elektronik",
+            "slug": "peralatan-elektronik",
+            "icon": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories1ecf8a0a6d51bbfc63863c7d6622bb71.png",
+            "cover": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories",
+            "background": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories",
+            "highlight": 1,
+            "created_at": "2018-10-02 05:00:00",
+            "updated_at": "2019-08-09 11:54:12",
+            "child": [
+                {
+                    "id": 7,
+                    "user_id": 1,
+                    "parent_id": 8,
+                    "name": "Hobi & Koleksi",
+                    "slug": "hobi-koleksi",
+                    "icon": "64539ae351fc0d842eed2c8f85159379.png",
+                    "cover": null,
+                    "background": null,
+                    "highlight": 0,
+                    "created_at": "2018-10-02 05:00:00",
+                    "updated_at": "2019-09-07 10:22:54"
+                },
+                {
+                    "id": 9,
+                    "user_id": 1,
+                    "parent_id": 8,
+                    "name": "HP, Komp & Aks",
+                    "slug": "hp-komp-aks",
+                    "icon": "49d9886f46a933496e1adc2abc20ab51.png",
+                    "cover": "9208211a4ee586be7cb6c9dbf8c176ef.jpeg",
+                    "background": "8a8ef872198185a81fd1615a2bf8fb53.jpg",
+                    "highlight": 0,
+                    "created_at": "2018-10-02 05:00:00",
+                    "updated_at": "2019-08-09 11:55:28"
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "parent_id": null,
+            "name": "Olahraga & Outdoor",
+            "slug": "olahraga-outdoor",
+            "icon": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories0315c110571cd6c765a9d9dbad569482.png",
+            "cover": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories",
+            "background": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories",
+            "highlight": 0,
+            "created_at": "2018-10-02 05:00:00",
+            "updated_at": "2019-09-07 10:23:48",
+            "child": [
+                {
+                    "id": 11,
+                    "user_id": 1,
+                    "parent_id": 10,
+                    "name": "Otomotif",
+                    "slug": "otomotif",
+                    "icon": "f89a8903b4a23f6fe5b71b8dd4432329.png",
+                    "cover": "eb0ba41b0a4dc19e896b8aef1651821a.jpeg",
+                    "background": null,
+                    "highlight": 0,
+                    "created_at": "2018-10-02 05:00:00",
+                    "updated_at": "2019-09-07 10:23:23"
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "parent_id": null,
+            "name": "E-Voucher",
+            "slug": "e-voucher",
+            "icon": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories1583668f730d96c8d6fd4264c312a55a.png",
+            "cover": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories",
+            "background": "/Users/admin/MONSPACE/live-msp-mall/public/uploads/categories",
+            "highlight": 0,
+            "created_at": "2018-10-02 05:00:00",
+            "updated_at": "2019-04-08 12:40:50",
+            "child": []
+        }
+    ]
+}

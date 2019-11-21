@@ -1,0 +1,30 @@
+#app .evolve-enter-active,#app .evolve-leave-active,
+#app .source-enter-active,#app .source-leave-active{
+  transition:1s
+}
+#app .shrink-enter-active,#app .shrink-leave-active{
+  transition:.37s ease-out
+}
+#app .pullup-enter-active,#app .pullup-leave-active{
+  transition:.25s
+}
+
+#app .shrink-enter,#app .shrink-leave-to{
+  opacity:0;
+  transform:translate(50%,-50%) scale(1.75)!important
+}
+
+#app .evolve-enter,#app .evolve-leave-to{
+  opacity:0;
+  transform:scale(1.05)
+}
+
+#app .source-enter,#app .source-leave-to{
+  opacity:0;
+  transform:translateX(-50%)
+}
+
+#app .pullup-enter,#app .pullup-leave-to{
+  opacity:0;
+  transform:translateY(27px)
+}

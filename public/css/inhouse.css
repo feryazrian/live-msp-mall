@@ -1,0 +1,49 @@
+/* Start style for floating button live streaming */
+.label-container{
+    position:fixed;
+    bottom:48px;
+    right:105px;
+    display:table;
+    visibility: hidden;
+}
+
+.label-text{
+    color:#FFF;
+    background:rgba(51,51,51,0.5);
+    display:table-cell;
+    vertical-align:middle;
+    padding:10px;
+    border-radius:3px;
+}
+
+.float{
+    position:fixed;
+    bottom:0px;
+    right:0px;
+    border-radius:50px;
+    text-align:center;
+    z-index: 99;
+}
+
+@media (max-width: 500px){
+    #streamBtn > img, .float {
+        width:80px !important;
+        height:80px !important;
+    }
+}
+#streamBtn > img, .float{
+    width:125px;
+    height:125px;
+}
+
+a.float + div.label-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+    visibility: visible;
+    opacity: 1;
+}
+/* end of style for floating button live streaming */

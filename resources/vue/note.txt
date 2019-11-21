@@ -1,0 +1,2 @@
+New NPM
+npm install -g npm
